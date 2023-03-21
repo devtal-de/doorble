@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:paddingTop="2dip"
+		android:paddingBottom="2dip"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:minHeight="?android:attr/listPreferredItemHeight"
+		android:orientation="horizontal">
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:orientation="vertical">
+		<TextView android:id="@+id/eli_name"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="?android:attr/listPreferredItemPaddingStart"
+			android:layout_marginTop="6dip"
+			android:textAppearance="?android:attr/textAppearanceListItem" />
+		<TextView android:id="@+id/eli_mac"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="?android:attr/listPreferredItemPaddingStart"
+			android:layout_below="@id/eli_name"
+			android:layout_alignStart="@id/eli_name"
+			android:enabled="false"
+			android:textAppearance="?android:attr/textAppearanceListItemSecondary"/>
+	</LinearLayout>
+<!--	<CheckBox android:id="@+id/cb_visiblity"
+			android:layout_width="wrap_content"
+			android:button="@android:drawable/btn_star"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center|right" /> -->
+	<Switch android:id="@+id/tb_visibility"
+			android:layout_width="wrap_content"
+			android:thumb="@drawable/visibility_switch"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center|right" />
+	<ImageButton
+			android:src="@drawable/edit"
+			android:id="@+id/edit_door_button"
+			android:text="@string/edit_door"
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:layout_gravity="center|right"
+			android:layout_marginEnd="?android:attr/listPreferredItemPaddingEnd" />
+</LinearLayout>

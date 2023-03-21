@@ -1,0 +1,30 @@
+<resources>
+	<string name="open_button">open</string>
+	<string name="close_button">close</string>
+	<string name="toast_keygen">key generated</string>
+	<string name="toast_keyclip">key copied to clipboard</string>
+	<string name="menu_key">key</string>
+	<string name="menu_key_clipboard">clipboard</string>
+	<string name="menu_key_qr">QR code</string>
+	<string name="menu_key_share">share</string>
+	<string name="menu_show_log">show log</string>
+	<string name="menu_scan_off">disable scan</string>
+	<string name="menu_scan_on">enable scan</string>
+	<string name="no_door"> 🚪 No doors. 😮 \n 🐐 Create some! 🦄 </string>
+	<string name="manage_doors"> edit doors  </string>
+	<string name="edit_door"> ✏️  </string>
+	<string name="door_vis_on"> 👁️ </string>
+	<string name="new_door"> add new door </string>
+	<string name="door_name_pre"> Name: </string>
+	<string name="door_name_hint"> Name </string>
+	<string name="door_mac_pre"> MAC: </string>
+	<string name="door_mac_hint"> MAC Address </string>
+	<string name="door_pubkey_pre"> Key: </string>
+	<string name="door_pubkey_hint"> ECDSA Public Key (PEM) </string>
+	<string name="door_sub_pre"> Subject: </string>
+	<string name="door_sub_hint"> Subject (self description of door) </string>
+	<string name="door_visibility_pre"> enabled: </string>
+	<string name="door_valtime_pre"> check time: </string>
+	<string name="door_save"> save door </string>
+	<string name="door_delete"> delete door </string>
+</resources>

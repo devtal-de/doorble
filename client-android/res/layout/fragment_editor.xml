@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical">
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/door_name_pre" />
+		<EditText android:id="@+id/eli_name"
+			android:hint="@string/door_name_hint"
+			android:inputType="text"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" />
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/door_mac_pre" />
+		<de.devtal.doorble.SuggestionTextView android:id="@+id/eli_mac"
+			android:hint="@string/door_mac_hint"
+			android:inputType="text"
+			android:completionThreshold="1"
+			android:dropDownWidth="wrap_content"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/eli_name"
+			android:layout_alignStart="@id/eli_name" />
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/door_pubkey_pre" />
+		<!-- ExtractEditText ? -->
+		<EditText android:id="@+id/eli_pubkey"
+			android:hint="@string/door_pubkey_hint"
+			android:inputType="textMultiLine"
+			android:minLines="4"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/eli_name"
+			android:layout_alignStart="@id/eli_name" />
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/door_sub_pre" />
+		<EditText android:id="@+id/eli_sub"
+			android:hint="@string/door_sub_hint"
+			android:inputType="text"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/eli_name"
+			android:layout_alignStart="@id/eli_name" />
+	</LinearLayout>
+
+<!--
+		"?android:attr/textAppearanceListItemSecondary"
+-->
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/door_visibility_pre" />
+		<Switch android:id="@+id/eli_visibility"
+				android:thumb="@drawable/visibility_switch"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignStart="@id/eli_name" />
+<!--			android:layout_gravity="center|right" -->
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/door_valtime_pre" />
+<!--		<TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="👉" /> -->
+		<Switch android:id="@+id/eli_valtime"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignStart="@id/eli_name" />
+<!--			android:layout_gravity="center|right" -->
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<ImageButton
+			android:id="@+id/eli_delete"
+			android:src="@drawable/delete"
+			android:text="@string/door_delete"
+			android:tint="@color/red"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="left" />
+		<View android:layout_width="0dp" android:layout_height="0dp"
+			android:layout_weight="1" /> <!-- filler to align save button right -->
+		<ImageButton
+			android:id="@+id/eli_save"
+			android:src="@drawable/save"
+			android:text="@string/door_save"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="right" />
+	</LinearLayout>
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/eli_error" />
+</LinearLayout>

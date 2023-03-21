@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:paddingTop="2dip"
+		android:paddingBottom="2dip"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:minHeight="?android:attr/listPreferredItemHeight"
+		android:orientation="horizontal">
+	<Button
+		android:drawableLeft="@drawable/edit_button"
+		android:id="@+id/edit_door_button"
+		android:text="@string/manage_doors"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_gravity="center|right"
+		android:layout_marginStart="?android:attr/listPreferredItemPaddingStart"
+		android:layout_marginEnd="?android:attr/listPreferredItemPaddingEnd"
+		android:layout_marginTop="6dip"
+		android:layout_marginBottom="6dip"
+		android:textAppearance="?android:attr/textAppearanceListItem" />
+</LinearLayout>
+
